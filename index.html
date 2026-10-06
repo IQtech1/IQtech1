@@ -1,54 +1,376 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ستار ميوزيك</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            color: white;
-        }
-        .container {
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 20px;
-            padding: 40px 30px;
-            max-width: 500px;
-            text-align: center;
-        }
-        h1 { 
-            font-size: 36px; 
-            margin-bottom: 15px;
-            background: linear-gradient(90deg, #e94560, #f77f00);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        p { color: #aaa; line-height: 1.8; margin-bottom: 25px; }
-        .btn {
-            display: inline-block;
-            background: linear-gradient(135deg, #e94560, #f77f00);
-            color: white;
-            padding: 12px 30px;
-            border-radius: 25px;
-            text-decoration: none;
-            margin: 5px;
-            font-weight: bold;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Star Music - شركتنا</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, sans-serif; }
+    
+    body {
+        background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+        min-height: 100vh;
+        color: white;
+        padding-bottom: 80px;
+    }
+    
+    /* Header */
+    header {
+        background: rgba(0,0,0,0.4);
+        backdrop-filter: blur(10px);
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    
+    .logo {
+        font-size: 32px;
+        font-weight: bold;
+        background: linear-gradient(90deg, #f77f00, #e94560, #f77f00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 5px;
+    }
+    
+    .tagline {
+        color: #aaa;
+        font-size: 14px;
+    }
+    
+    /* Navigation Tabs */
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        padding: 15px;
+        flex-wrap: wrap;
+        background: rgba(0,0,0,0.2);
+    }
+    
+    .tab-btn {
+        background: rgba(255,255,255,0.08);
+        border: 1px solid rgba(255,255,255,0.15);
+        color: white;
+        padding: 10px 18px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: 0.3s;
+        font-weight: 500;
+    }
+    
+    .tab-btn:hover {
+        background: rgba(255,255,255,0.15);
+        transform: translateY(-2px);
+    }
+    
+    .tab-btn.active {
+        background: linear-gradient(135deg, #f77f00, #e94560);
+        border-color: transparent;
+        box-shadow: 0 5px 20px rgba(233,69,96,0.4);
+    }
+    
+    /* Content */
+    .content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px 20px;
+    }
+    
+    .page {
+        display: none;
+        animation: fadeIn 0.5s ease;
+    }
+    
+    .page.active {
+        display: block;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    /* Cards */
+    .card {
+        background: rgba(255,255,255,0.05);
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 20px;
+        padding: 30px 25px;
+        margin-bottom: 20px;
+        text-align: center;
+        backdrop-filter: blur(10px);
+    }
+    
+    .card-icon {
+        font-size: 60px;
+        margin-bottom: 20px;
+        display: block;
+    }
+    
+    h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        background: linear-gradient(90deg, #f77f00, #e94560);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    
+    h3 {
+        font-size: 22px;
+        margin-bottom: 12px;
+        color: #f77f00;
+    }
+    
+    p {
+        color: #ccc;
+        line-height: 1.9;
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+    
+    .features {
+        text-align: right;
+        margin: 20px 0;
+        padding: 0 15px;
+    }
+    
+    .features li {
+        color: #ddd;
+        padding: 10px 0;
+        list-style: none;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+        font-size: 15px;
+    }
+    
+    .features li::before {
+        content: "✅ ";
+        margin-left: 5px;
+    }
+    
+    /* Buttons */
+    .btn {
+        display: inline-block;
+        background: linear-gradient(135deg, #f77f00, #e94560);
+        color: white;
+        padding: 14px 32px;
+        border-radius: 30px;
+        text-decoration: none;
+        margin: 8px 5px;
+        font-weight: bold;
+        transition: 0.3s;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        box-shadow: 0 5px 20px rgba(233,69,96,0.3);
+    }
+    
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(233,69,96,0.5);
+    }
+    
+    .btn-youtube {
+        background: linear-gradient(135deg, #ff0000, #cc0000);
+        box-shadow: 0 5px 20px rgba(255,0,0,0.3);
+    }
+    
+    .btn-facebook {
+        background: linear-gradient(135deg, #1877f2, #0d5bcc);
+        box-shadow: 0 5px 20px rgba(24,119,242,0.3);
+    }
+    
+    .btn-app {
+        background: linear-gradient(135deg, #00b09b, #96c93d);
+        box-shadow: 0 5px 20px rgba(0,176,155,0.3);
+    }
+    
+    /* Social Icons */
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 20px 0;
+        flex-wrap: wrap;
+    }
+    
+    .social-links a {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        text-decoration: none;
+        transition: 0.3s;
+        color: white;
+    }
+    
+    .social-links .yt { background: #ff0000; }
+    .social-links .fb { background: #1877f2; }
+    .social-links a:hover {
+        transform: scale(1.15) rotate(5deg);
+    }
+    
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 30px 20px;
+        color: #666;
+        font-size: 13px;
+        border-top: 1px solid rgba(255,255,255,0.05);
+        margin-top: 30px;
+    }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>🎵 ستار ميوزيك</h1>
-        <p>مرحباً بك في موقع Star Music</p>
-        <a href="#" class="btn">🎧 استمع الآن</a>
+
+<header>
+    <div class="logo">⭐ Star Music</div>
+    <div class="tagline">شركة الإبداع والموسيقى</div>
+</header>
+
+<nav>
+    <button class="tab-btn active" onclick="showPage('home', this)">🏠 الرئيسية</button>
+    <button class="tab-btn" onclick="showPage('app', this)">📱 تطبيق حياتي</button>
+    <button class="tab-btn" onclick="showPage('youtube', this)">▶️ يوتيوب</button>
+    <button class="tab-btn" onclick="showPage('facebook', this)">📘 فيسبوك</button>
+</nav>
+
+<div class="content">
+
+    <!-- الصفحة الرئيسية -->
+    <div id="home" class="page active">
+        <div class="card">
+            <span class="card-icon">🎵</span>
+            <h2>مرحباً بك في Star Music</h2>
+            <p>شركة متخصصة في الإبداع الرقمي والموسيقى والتطبيقات الذكية</p>
+            <p>نقدم لك تجربة فريدة تجمع بين الفن والتقنية</p>
+        </div>
+        
+        <div class="card">
+            <h3>🌟 خدماتنا</h3>
+            <ul class="features">
+                <li>تطوير التطبيقات الذكية</li>
+                <li>إنتاج المحتوى الموسيقي</li>
+                <li>التسويق الرقمي</li>
+                <li>التصميم الإبداعي</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>تابعنا على</h3>
+            <div class="social-links">
+                <a href="https://youtube.com/@اسم_قناتك" target="_blank" class="yt">▶️</a>
+                <a href="https://facebook.com/اسم_صفحتك" target="_blank" class="fb">f</a>
+            </div>
+        </div>
     </div>
+
+    <!-- صفحة تطبيق حياتي -->
+    <div id="app" class="page">
+        <div class="card">
+            <span class="card-icon">📱</span>
+            <h2>تطبيق حياتي</h2>
+            <p>مساعدك اليومي لتتبع العادات وبناء حياة أفضل</p>
+        </div>
+
+        <div class="card">
+            <h3>✨ مميزات التطبيق</h3>
+            <ul class="features">
+                <li>تتبع العادات اليومية بسهولة</li>
+                <li>إحصائيات وتقارير أسبوعية</li>
+                <li>تذكيرات ذكية للعادات</li>
+                <li>واجهة عربية أنيقة</li>
+                <li>يعمل بدون إنترنت</li>
+                <li>مجاني بالكامل</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>📥 حمل التطبيق الآن</h3>
+            <p>متوفر قريباً على متجر Google Play</p>
+            <a href="#" class="btn btn-app">📲 قريباً على Google Play</a>
+        </div>
+    </div>
+
+    <!-- صفحة يوتيوب -->
+    <div id="youtube" class="page">
+        <div class="card">
+            <span class="card-icon">▶️</span>
+            <h2>قناتنا على يوتيوب</h2>
+            <p>شاهد أحدث الفيديوهات والمحتوى الحصري</p>
+        </div>
+
+        <div class="card">
+            <h3>🎬 ماذا ستجد على قناتنا؟</h3>
+            <ul class="features">
+                <li>شروحات تطبيق حياتي</li>
+                <li>نصائح لتطوير الذات</li>
+                <li>محتوى موسيقي حصري</li>
+                <li>فيديوهات تعليمية</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>اشترك الآن</h3>
+            <p>لا تفوّت أي فيديو جديد</p>
+            <a href="https://youtube.com/@اسم_قناتك" target="_blank" class="btn btn-youtube">▶️ زيارة القناة</a>
+        </div>
+    </div>
+
+    <!-- صفحة فيسبوك -->
+    <div id="facebook" class="page">
+        <div class="card">
+            <span class="card-icon">📘</span>
+            <h2>صفحتنا على فيسبوك</h2>
+            <p>تابع آخر الأخبار والتحديثات</p>
+        </div>
+
+        <div class="card">
+            <h3>💬 ماذا ننشر؟</h3>
+            <ul class="features">
+                <li>تحديثات تطبيق حياتي</li>
+                <li>نصائح يومية للعادات</li>
+                <li>عروض وإعلانات</li>
+                <li>تفاعل مع المتابعين</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>أعجب بالصفحة</h3>
+            <p>كن جزءاً من مجتمع Star Music</p>
+            <a href="https://facebook.com/اسم_صفحتك" target="_blank" class="btn btn-facebook">📘 زيارة الصفحة</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2025 Star Music - جميع الحقوق محفوظة</p>
+    <p style="margin-top: 8px;">صُنع بـ ❤️ في سوريا</p>
+</footer>
+
+<script>
+function showPage(pageId, btn) {
+    // إخفاء كل الصفحات
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    // إزالة active من كل الأزرار
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    // إظهار الصفحة المطلوبة
+    document.getElementById(pageId).classList.add('active');
+    // تفعيل الزر المضغوط
+    btn.classList.add('active');
+    // التمرير للأعلى
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
 </body>
 </html>
