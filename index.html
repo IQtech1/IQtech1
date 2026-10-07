@@ -1,259 +1,396 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>شركة النور | بوابة الإعلانات المجتمعية</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- ⭐ SEO -->
+<title>Star Music | شركة الإبداع الرقمي وتطبيق حياتي لتتبع العادات</title>
+<meta name="description" content="Star Music شركة رائدة في الإبداع الرقمي. اكتشف تطبيق حياتي لتتبع العادات اليومية، وتابع قناتنا على يوتيوب وفيسبوك.">
+<meta name="keywords" content="Star Music, ستار ميوزيك, تطبيق حياتي, تتبع العادات, تطبيق عادات, مساعد يومي, تطبيقات عربية">
+<meta name="author" content="Star Music">
+<meta name="robots" content="index, follow">
+
+<meta http-equiv="content-language" content="ar">
+<meta name="geo.region" content="SY">
+<meta name="geo.placename" content="Syria">
+
+<meta property="og:title" content="Star Music | شركة الإبداع الرقمي">
+<meta property="og:description" content="اكتشف تطبيق حياتي لتتبع العادات وبناء حياة أفضل">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://starmusic1167.github.io/starmusic/">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:site_name" content="Star Music">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Star Music | شركة الإبداع الرقمي">
+<meta name="twitter:description" content="اكتشف تطبيق حياتي لتتبع العادات">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⭐</text></svg>">
+<link rel="canonical" href="https://starmusic1167.github.io/starmusic/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Star Music",
+  "alternateName": "ستار ميوزيك",
+  "url": "https://starmusic1167.github.io/starmusic/",
+  "description": "شركة الإبداع الرقمي وتطوير التطبيقات الذكية"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "تطبيق حياتي",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "Android",
+  "description": "تطبيق لتتبع العادات اليومية وبناء حياة أفضل",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, sans-serif; }
+    
     body {
-      background: linear-gradient(180deg, #eef4f9 0%, #f9fcff 100%);
-      color: #1e2a3a;
-      padding: 20px;
-      min-height: 100vh;
+        background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+        min-height: 100vh;
+        color: white;
+        padding-bottom: 80px;
     }
-
-    .container {
-      max-width: 1450px;
-      margin: 0 auto;
-    }
-
-    /* ===== رأس الشركة ===== */
+    
     header {
-      background: linear-gradient(135deg, #062c3f, #14506e, #1f6f92);
-      color: white;
-      padding: 35px 25px;
-      border-radius: 30px;
-      margin-bottom: 30px;
-      box-shadow: 0 15px 35px rgba(0, 30, 50, 0.25);
-      text-align: center;
-      position: relative;
-      overflow: hidden;
+        background: rgba(0,0,0,0.4);
+        backdrop-filter: blur(10px);
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
     }
-
-    header::before {
-      content: "";
-      position: absolute;
-      top: -50%;
-      right: -10%;
-      width: 300px;
-      height: 300px;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 50%;
+    
+    .logo {
+        font-size: 32px;
+        font-weight: bold;
+        background: linear-gradient(90deg, #f77f00, #e94560, #f77f00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 5px;
     }
-
-    header h1 {
-      font-size: 2.6rem;
-      letter-spacing: 1px;
-      margin-bottom: 10px;
-      position: relative;
-      z-index: 1;
+    
+    .tagline { color: #aaa; font-size: 14px; }
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        padding: 15px;
+        flex-wrap: wrap;
+        background: rgba(0,0,0,0.2);
     }
-
-    header p {
-      font-size: 1.15rem;
-      opacity: 0.9;
-      font-weight: 300;
-      position: relative;
-      z-index: 1;
+    
+    .tab-btn {
+        background: rgba(255,255,255,0.08);
+        border: 1px solid rgba(255,255,255,0.15);
+        color: white;
+        padding: 10px 18px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: 0.3s;
+        font-weight: 500;
     }
-
-    .stats-bar {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      margin-top: 20px;
-      flex-wrap: wrap;
-      position: relative;
-      z-index: 1;
+    
+    .tab-btn:hover {
+        background: rgba(255,255,255,0.15);
+        transform: translateY(-2px);
     }
-
-    .stat-item {
-      text-align: center;
+    
+    .tab-btn.active {
+        background: linear-gradient(135deg, #f77f00, #e94560);
+        border-color: transparent;
+        box-shadow: 0 5px 20px rgba(233,69,96,0.4);
     }
-
-    .stat-item strong {
-      display: block;
-      font-size: 1.8rem;
-      color: #7fd4f5;
+    
+    .content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px 20px;
     }
-
-    .stat-item span {
-      font-size: 0.9rem;
-      opacity: 0.85;
+    
+    .page { display: none; animation: fadeIn 0.5s ease; }
+    .page.active { display: block; }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
     }
-
-    /* ===== شبكة الفئات ===== */
-    .categories-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 22px;
+    
+    .card {
+        background: rgba(255,255,255,0.05);
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 20px;
+        padding: 30px 25px;
+        margin-bottom: 20px;
+        text-align: center;
+        backdrop-filter: blur(10px);
     }
-
-    .category {
-      background: #ffffff;
-      border-radius: 22px;
-      padding: 18px 16px 16px;
-      box-shadow: 0 6px 18px rgba(0, 40, 60, 0.06);
-      border: 1px solid #e1ecf3;
-      transition: 0.25s ease;
-      display: flex;
-      flex-direction: column;
+    
+    .card-icon {
+        font-size: 60px;
+        margin-bottom: 20px;
+        display: block;
     }
-
-    .category:hover {
-      box-shadow: 0 14px 28px rgba(0, 50, 80, 0.12);
-      transform: translateY(-2px);
+    
+    h1 {
+        font-size: 32px;
+        margin-bottom: 15px;
+        background: linear-gradient(90deg, #f77f00, #e94560);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
-
-    .category h2 {
-      font-size: 1.15rem;
-      margin-bottom: 14px;
-      color: #0b3b4f;
-      border-right: 5px solid #2a8ab0;
-      padding-right: 10px;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    
+    h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        background: linear-gradient(90deg, #f77f00, #e94560);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
-
-    .category h2 .badge {
-      background: #e3f2fa;
-      color: #14607f;
-      font-size: 0.7rem;
-      padding: 3px 9px;
-      border-radius: 20px;
-      font-weight: 600;
+    
+    h3 { font-size: 22px; margin-bottom: 12px; color: #f77f00; }
+    
+    p { color: #ccc; line-height: 1.9; margin-bottom: 15px; font-size: 15px; }
+    
+    .features {
+        text-align: right;
+        margin: 20px 0;
+        padding: 0 15px;
     }
-
-    /* ===== شبكة المربعات الإعلانية ===== */
-    .ads-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 14px;
-      flex: 1;
+    
+    .features li {
+        color: #ddd;
+        padding: 10px 0;
+        list-style: none;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+        font-size: 15px;
     }
-
-    /* المربع الإعلاني الصغير */
-    .ad-box {
-      background: #fbfdff;
-      border-radius: 16px;
-      border: 1px solid #d6e6f0;
-      padding: 10px;
-      min-height: 120px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      overflow: hidden;
-      position: relative;
-      transition: 0.2s;
+    
+    .features li::before { content: "✅ "; margin-left: 5px; }
+    
+    .btn {
+        display: inline-block;
+        background: linear-gradient(135deg, #f77f00, #e94560);
+        color: white;
+        padding: 14px 32px;
+        border-radius: 30px;
+        text-decoration: none;
+        margin: 8px 5px;
+        font-weight: bold;
+        transition: 0.3s;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        box-shadow: 0 5px 20px rgba(233,69,96,0.3);
     }
-
-    .ad-box:hover {
-      border-color: #7fc4e0;
-      background: #f4fbff;
+    
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(233,69,96,0.5);
     }
-
-    .ad-box .ad-label {
-      position: absolute;
-      top: 4px;
-      right: 8px;
-      font-size: 0.6rem;
-      color: #9bb6c4;
-      letter-spacing: 0.5px;
+    
+    .btn-youtube {
+        background: linear-gradient(135deg, #ff0000, #cc0000);
+        box-shadow: 0 5px 20px rgba(255,0,0,0.3);
     }
-
-    .ad-box iframe,
-    .ad-box img,
-    .ad-box div {
-      max-width: 100%;
+    
+    .btn-facebook {
+        background: linear-gradient(135deg, #1877f2, #0d5bcc);
+        box-shadow: 0 5px 20px rgba(24,119,242,0.3);
     }
-
-    /* تنسيق خاص للإعلانات الطويلة/الضيقة */
-    .ad-box.tall {
-      min-height: 260px;
+    
+    .btn-app {
+        background: linear-gradient(135deg, #00b09b, #96c93d);
+        box-shadow: 0 5px 20px rgba(0,176,155,0.3);
     }
-
-    .ad-box.wide {
-      min-height: 130px;
+    
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 20px 0;
+        flex-wrap: wrap;
     }
-
-    /* ===== التذييل ===== */
+    
+    .social-links a {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        text-decoration: none;
+        transition: 0.3s;
+        color: white;
+    }
+    
+    .social-links .yt { background: #ff0000; }
+    .social-links .fb { background: #1877f2; }
+    .social-links a:hover { transform: scale(1.15) rotate(5deg); }
+    
+    /* 📢 حاويات الإعلانات */
+    .ad-container {
+        background: rgba(255,255,255,0.03);
+        border: 1px dashed rgba(255,255,255,0.15);
+        border-radius: 15px;
+        padding: 15px;
+        margin: 25px auto;
+        text-align: center;
+        min-height: 60px;
+        max-width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .ad-label {
+        color: #666;
+        font-size: 11px;
+        margin-bottom: 8px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    
+    /* إخفاء الإعلانات الكبيرة على الجوال */
+    .ad-desktop-only { display: none !important; }
+    
+    /* إظهار إعلانات الجوال فقط على الشاشات الصغيرة */
+    .ad-mobile-only { display: flex; }
+    
+    /* على الشاشات الكبيرة (أكبر من 768px) */
+    @media (min-width: 768px) {
+        .ad-desktop-only { display: flex !important; }
+        .ad-mobile-only { display: none !important; }
+    }
+    
     footer {
-      text-align: center;
-      margin-top: 45px;
-      padding: 25px;
-      color: #5a7686;
-      font-size: 0.9rem;
-      border-top: 1px solid #d9e7f0;
+        text-align: center;
+        padding: 30px 20px;
+        color: #666;
+        font-size: 13px;
+        border-top: 1px solid rgba(255,255,255,0.05);
+        margin-top: 30px;
     }
-
-    footer strong {
-      color: #0b3b4f;
-    }
-
-    /* ===== استجابة الشاشات ===== */
-    @media (max-width: 600px) {
-      header h1 { font-size: 1.8rem; }
-      header p { font-size: 1rem; }
-      .stat-item strong { font-size: 1.4rem; }
-      .categories-grid { grid-template-columns: 1fr; }
-    }
-  </style>
-
-  <!-- سكربتات الوحدات الإعلانية الأساسية -->
-  <script data-cfasync="false" src="https://bauval.org/14/c335834500e1211f94a1f7ef95174d3b"></script>
-  <script data-cfasync="false" src="https://abscloud.org/1/75bdea125a46e89eb786e5ec590f0bc6"></script>
+</style>
 </head>
 <body>
 
-  <div class="container">
+<!-- ============================================ -->
+<!-- 🚀 1. Adsterra Popunder (في البداية) -->
+<!-- ============================================ -->
+<script data-cfasync="false" src="https://araplhn.org/4/97c41ece348f0318cb82489d2ba8745c"></script>
 
-    <!-- ===== رأس الشركة ===== -->
-    <header>
-      <h1>🏢 شركة النور</h1>
-      <p>بوابة الإعلانات المجتمعية — 50 وحدة إعلانية في 20 فئة</p>
-      <div class="stats-bar">
-        <div class="stat-item">
-          <strong>50</strong>
-          <span>وحدة إعلانية</span>
-        </div>
-        <div class="stat-item">
-          <strong>20</strong>
-          <span>فئة إعلانية</span>
-        </div>
-        <div class="stat-item">
-          <strong>24/7</strong>
-          <span>عرض مباشر</span>
-        </div>
-      </div>
-    </header>
+<!-- ============================================ -->
+<!-- 🚀 2. Adsterra Social Bar (شريط عائم) -->
+<!-- ============================================ -->
+<script data-cfasync="false" src="https://abscloud.org/1/75bdea125a46e89eb786e5ec590f0bc6"></script>
 
-    <!-- ===== شبكة الفئات ===== -->
-    <div class="categories-grid" id="categoriesGrid">
+<header>
+    <h1 class="logo">⭐ Star Music</h1>
+    <div class="tagline">شركة الإبداع والموسيقى والتطبيقات الذكية</div>
+</header>
 
-      <!-- ===== الفئة 1 ===== -->
-      <div class="category">
-        <h2>أخبار محلية <span class="badge">2 إعلانات</span></h2>
-        <div class="ads-grid">
-          <!-- وحدة 1: iframe 300x250 -->
-          <div class="ad-box">
-            <span class="ad-label">إعلان 1</span>
-            <script async="async" data-cfasync="false" src="https://bauval.org/21/4140d23fa173bf8b71136d342f9b0874"></script>
-            <div id="container-4140d23fa173bf8b71136d342f9b0874"></div>
-          </div>
-          <!-- وحدة 2: iframe 300x250 -->
-          <div class="ad-box">
-            <span class="ad-label">إعلان 2</span>
+<nav>
+    <button class="tab-btn active" onclick="showPage('home', this)">🏠 الرئيسية</button>
+    <button class="tab-btn" onclick="showPage('app', this)">📱 تطبيق حياتي</button>
+    <button class="tab-btn" onclick="showPage('youtube', this)">▶️ يوتيوب</button>
+    <button class="tab-btn" onclick="showPage('facebook', this)">📘 فيسبوك</button>
+</nav>
+
+<div class="content">
+
+    <!-- ============================================ -->
+    <!-- 📢 3. Banner 320x50 (الجوال) -->
+    <!-- ============================================ -->
+    <div class="ad-container ad-mobile-only">
+        <div class="ad-label">إعلان</div>
+        <script>
+          atOptions = {
+            'key' : 'bd1db04c49277e33a23f4993f45c0a1c',
+            'format' : 'iframe',
+            'height' : 50,
+            'width' : 320,
+            'params' : {}
+          };
+        </script>
+        <script src="https://bauval.org/22/bd1db04c49277e33a23f4993f45c0a1c"></script>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- 📢 4. Banner 728x90 (الكمبيوتر فقط) -->
+    <!-- ============================================ -->
+    <div class="ad-container ad-desktop-only">
+        <div class="ad-label">إعلان</div>
+        <script>
+          atOptions = {
+            'key' : 'f7a580f12b54d6c8a2b0a5d0f9e70d89',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+          };
+        </script>
+        <script src="https://bauval.org/22/f7a580f12b54d6c8a2b0a5d0f9e70d89"></script>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- 📢 5. Banner 468x60 (الكمبيوتر فقط) -->
+    <!-- ============================================ -->
+    <div class="ad-container ad-desktop-only">
+        <div class="ad-label">إعلان</div>
+        <script>
+          atOptions = {
+            'key' : 'e3c6b2c7fb3c80328af6310c770c92f2',
+            'format' : 'iframe',
+            'height' : 60,
+            'width' : 468,
+            'params' : {}
+          };
+        </script>
+        <script src="https://bauval.org/22/e3c6b2c7fb3c80328af6310c770c92f2"></script>
+    </div>
+
+    <!-- الصفحة الرئيسية -->
+    <div id="home" class="page active">
+        <div class="card">
+            <span class="card-icon">🎵</span>
+            <h2>مرحباً بك في Star Music</h2>
+            <p>
+                <strong>Star Music</strong> هي شركة رائدة في مجال الإبداع الرقمي 
+                وتطوير التطبيقات الذكية. نقدم حلولاً مبتكرة تجمع بين الفن والتقنية، 
+                ونطوّر تطبيقات عربية تساعد المستخدمين على تحسين حياتهم اليومية.
+            </p>
+            <p>
+                انطلقنا من شغفنا بالموسيقى والتقنية، لنصنع تجربة فريدة تجمع بين 
+                الإبداع والاحترافية.
+            </p>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- 📢 6. Banner 300x250 (الجوال) -->
+        <!-- ============================================ -->
+        <div class="ad-container ad-mobile-only">
+            <div class="ad-label">إعلان</div>
             <script>
               atOptions = {
                 'key' : '127716c4733e56a30af61d8a6802ec66',
@@ -264,101 +401,57 @@
               };
             </script>
             <script src="https://bauval.org/22/127716c4733e56a30af61d8a6802ec66"></script>
-          </div>
         </div>
-      </div>
-
-      <!-- ===== الفئة 2 ===== -->
-      <div class="category">
-        <h2>تقنية وبرمجة <span class="badge">2 إعلانات</span></h2>
-        <div class="ads-grid">
-          <!-- وحدة 3: 320x50 -->
-          <div class="ad-box wide">
-            <span class="ad-label">إعلان 3</span>
-            <script>
-              atOptions = {
-                'key' : 'bd1db04c49277e33a23f4993f45c0a1c',
-                'format' : 'iframe',
-                'height' : 50,
-                'width' : 320,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/bd1db04c49277e33a23f4993f45c0a1c"></script>
-          </div>
-          <!-- وحدة 4: 728x90 -->
-          <div class="ad-box wide">
-            <span class="ad-label">إعلان 4</span>
-            <script>
-              atOptions = {
-                'key' : 'f7a580f12b54d6c8a2b0a5d0f9e70d89',
-                'format' : 'iframe',
-                'height' : 90,
-                'width' : 728,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/f7a580f12b54d6c8a2b0a5d0f9e70d89"></script>
-          </div>
+        
+        <div class="card">
+            <h3>🌟 خدماتنا</h3>
+            <ul class="features">
+                <li>تطوير التطبيقات الذكية للأندرويد</li>
+                <li>إنتاج المحتوى الموسيقي الاحترافي</li>
+                <li>التسويق الرقمي وإدارة السوشيال ميديا</li>
+                <li>التصميم الإبداعي والهوية البصرية</li>
+            </ul>
         </div>
-      </div>
 
-      <!-- ===== الفئة 3 ===== -->
-      <div class="category">
-        <h2>رياضة <span class="badge">2 إعلانات</span></h2>
-        <div class="ads-grid">
-          <!-- وحدة 5: 468x60 -->
-          <div class="ad-box wide">
-            <span class="ad-label">إعلان 5</span>
-            <script>
-              atOptions = {
-                'key' : 'e3c6b2c7fb3c80328af6310c770c92f2',
-                'format' : 'iframe',
-                'height' : 60,
-                'width' : 468,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/e3c6b2c7fb3c80328af6310c770c92f2"></script>
-          </div>
-          <!-- وحدة 6: 160x600 -->
-          <div class="ad-box tall">
-            <span class="ad-label">إعلان 6</span>
-            <script>
-              atOptions = {
-                'key' : 'ed14d7d842e4639b2659c9fd1ff724b7',
-                'format' : 'iframe',
-                'height' : 600,
-                'width' : 160,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/ed14d7d842e4639b2659c9fd1ff724b7"></script>
-          </div>
+        <div class="card">
+            <h3>تابعنا على</h3>
+            <p>كن جزءاً من مجتمعنا وتابع آخر أخبارنا</p>
+            <div class="social-links">
+                <a href="https://youtube.com/@اسم_قناتك" target="_blank" class="yt" aria-label="يوتيوب">▶️</a>
+                <a href="https://facebook.com/اسم_صفحتك" target="_blank" class="fb" aria-label="فيسبوك">f</a>
+            </div>
         </div>
-      </div>
+    </div>
 
-      <!-- ===== الفئة 4 ===== -->
-      <div class="category">
-        <h2>اقتصاد وأعمال <span class="badge">2 إعلانات</span></h2>
-        <div class="ads-grid">
-          <!-- وحدة 7: 160x300 -->
-          <div class="ad-box tall">
-            <span class="ad-label">إعلان 7</span>
-            <script>
-              atOptions = {
-                'key' : '3628b50fe6f0c66853051d77d494c75a',
-                'format' : 'iframe',
-                'height' : 300,
-                'width' : 160,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/3628b50fe6f0c66853051d77d494c75a"></script>
-          </div>
-          <!-- إعادة استخدام وحدة 300x250 -->
-          <div class="ad-box">
-            <span class="ad-label">إعلان 8</span>
+    <!-- صفحة تطبيق حياتي -->
+    <div id="app" class="page">
+        <div class="card">
+            <span class="card-icon">📱</span>
+            <h2>تطبيق حياتي</h2>
+            <p>
+                <strong>تطبيق حياتي</strong> هو مساعدك اليومي لتتبع العادات وبناء حياة أفضل. 
+                صُمم خصيصاً للمستخدم العربي، ليمنحك تجربة سلسة وأنيقة في متابعة عاداتك 
+                اليومية وتحقيق أهدافك.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>✨ مميزات التطبيق</h3>
+            <ul class="features">
+                <li>تتبع العادات اليومية بسهولة تامة</li>
+                <li>إحصائيات وتقارير أسبوعية وشهرية</li>
+                <li>تذكيرات ذكية للعادات في الوقت المناسب</li>
+                <li>واجهة عربية أنيقة وسهلة الاستخدام</li>
+                <li>يعمل بدون إنترنت</li>
+                <li>مجاني بالكامل بدون إعلانات مزعجة</li>
+            </ul>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- 📢 7. Banner 300x250 (الجوال) -->
+        <!-- ============================================ -->
+        <div class="ad-container ad-mobile-only">
+            <div class="ad-label">إعلان</div>
             <script>
               atOptions = {
                 'key' : '127716c4733e56a30af61d8a6802ec66',
@@ -369,95 +462,42 @@
               };
             </script>
             <script src="https://bauval.org/22/127716c4733e56a30af61d8a6802ec66"></script>
-          </div>
         </div>
-      </div>
 
-      <!-- ===== الفئة 5 ===== -->
-      <div class="category">
-        <h2>صحة وطب <span class="badge">2 إعلانات</span></h2>
-        <div class="ads-grid">
-          <div class="ad-box wide">
-            <span class="ad-label">إعلان 9</span>
-            <script>
-              atOptions = {
-                'key' : 'bd1db04c49277e33a23f4993f45c0a1c',
-                'format' : 'iframe',
-                'height' : 50,
-                'width' : 320,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/bd1db04c49277e33a23f4993f45c0a1c"></script>
-          </div>
-          <div class="ad-box wide">
-            <span class="ad-label">إعلان 10</span>
-            <script>
-              atOptions = {
-                'key' : 'f7a580f12b54d6c8a2b0a5d0f9e70d89',
-                'format' : 'iframe',
-                'height' : 90,
-                'width' : 728,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/f7a580f12b54d6c8a2b0a5d0f9e70d89"></script>
-          </div>
+        <div class="card">
+            <h3>📥 حمل التطبيق الآن</h3>
+            <p>التطبيق متوفر قريباً على متجر Google Play</p>
+            <a href="#" class="btn btn-app">📲 قريباً على Google Play</a>
         </div>
-      </div>
+    </div>
 
-      <!-- ===== الفئة 6 ===== -->
-      <div class="category">
-        <h2>تعليم وتدريب <span class="badge">2 إعلانات</span></h2>
-        <div class="ads-grid">
-          <div class="ad-box wide">
-            <span class="ad-label">إعلان 11</span>
-            <script>
-              atOptions = {
-                'key' : 'e3c6b2c7fb3c80328af6310c770c92f2',
-                'format' : 'iframe',
-                'height' : 60,
-                'width' : 468,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/e3c6b2c7fb3c80328af6310c770c92f2"></script>
-          </div>
-          <div class="ad-box tall">
-            <span class="ad-label">إعلان 12</span>
-            <script>
-              atOptions = {
-                'key' : 'ed14d7d842e4639b2659c9fd1ff724b7',
-                'format' : 'iframe',
-                'height' : 600,
-                'width' : 160,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/ed14d7d842e4639b2659c9fd1ff724b7"></script>
-          </div>
+    <!-- صفحة يوتيوب -->
+    <div id="youtube" class="page">
+        <div class="card">
+            <span class="card-icon">▶️</span>
+            <h2>قناتنا على يوتيوب</h2>
+            <p>
+                شاهد أحدث الفيديوهات والمحتوى الحصري من <strong>Star Music</strong>. 
+                نقدم محتوى متنوعاً يغطي التطبيقات، الموسيقى، والنصائح اليومية.
+            </p>
         </div>
-      </div>
 
-      <!-- ===== الفئة 7 ===== -->
-      <div class="category">
-        <h2>سيارات ومركبات <span class="badge">2 إعلانات</span></h2>
-        <div class="ads-grid">
-          <div class="ad-box tall">
-            <span class="ad-label">إعلان 13</span>
-            <script>
-              atOptions = {
-                'key' : '3628b50fe6f0c66853051d77d494c75a',
-                'format' : 'iframe',
-                'height' : 300,
-                'width' : 160,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/3628b50fe6f0c66853051d77d494c75a"></script>
-          </div>
-          <div class="ad-box">
-            <span class="ad-label">إعلان 14</span>
+        <div class="card">
+            <h3>🎬 ماذا ستجد على قناتنا؟</h3>
+            <ul class="features">
+                <li>شروحات تفصيلية لتطبيق حياتي</li>
+                <li>نصائح لتطوير الذات وبناء العادات</li>
+                <li>محتوى موسيقي حصري</li>
+                <li>فيديوهات تعليمية وتقنية</li>
+                <li>مراجعات لأحدث التطبيقات</li>
+            </ul>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- 📢 8. Banner 300x250 (الجوال) -->
+        <!-- ============================================ -->
+        <div class="ad-container ad-mobile-only">
+            <div class="ad-label">إعلان</div>
             <script>
               atOptions = {
                 'key' : '127716c4733e56a30af61d8a6802ec66',
@@ -468,448 +508,105 @@
               };
             </script>
             <script src="https://bauval.org/22/127716c4733e56a30af61d8a6802ec66"></script>
-          </div>
         </div>
-      </div>
 
-      <!-- ===== الفئة 8 ===== -->
-      <div class="category">
-        <h2>عقارات <span class="badge">2 إعلانات</span></h2>
-        <div class="ads-grid">
-          <div class="ad-box wide">
-            <span class="ad-label">إعلان 15</span>
-            <script>
-              atOptions = {
-                'key' : 'bd1db04c49277e33a23f4993f45c0a1c',
-                'format' : 'iframe',
-                'height' : 50,
-                'width' : 320,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/bd1db04c49277e33a23f4993f45c0a1c"></script>
-          </div>
-          <div class="ad-box wide">
-            <span class="ad-label">إعلان 16</span>
-            <script>
-              atOptions = {
-                'key' : 'f7a580f12b54d6c8a2b0a5d0f9e70d89',
-                'format' : 'iframe',
-                'height' : 90,
-                'width' : 728,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/f7a580f12b54d6c8a2b0a5d0f9e70d89"></script>
-          </div>
+        <div class="card">
+            <h3>اشترك الآن</h3>
+            <p>لا تفوّت أي فيديو جديد، اشترك وفعّل الجرس 🔔</p>
+            <a href="https://youtube.com/@اسم_قناتك" target="_blank" class="btn btn-youtube">▶️ زيارة القناة</a>
         </div>
-      </div>
+    </div>
 
-      <!-- ===== الفئة 9 ===== -->
-      <div class="category">
-        <h2>سياحة وسفر <span class="badge">2 إعلانات</span></h2>
-        <div class="ads-grid">
-          <div class="ad-box wide">
-            <span class="ad-label">إعلان 17</span>
-            <script>
-              atOptions = {
-                'key' : 'e3c6b2c7fb3c80328af6310c770c92f2',
-                'format' : 'iframe',
-                'height' : 60,
-                'width' : 468,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/e3c6b2c7fb3c80328af6310c770c92f2"></script>
-          </div>
-          <div class="ad-box tall">
-            <span class="ad-label">إعلان 18</span>
-            <script>
-              atOptions = {
-                'key' : 'ed14d7d842e4639b2659c9fd1ff724b7',
-                'format' : 'iframe',
-                'height' : 600,
-                'width' : 160,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/ed14d7d842e4639b2659c9fd1ff724b7"></script>
-          </div>
+    <!-- صفحة فيسبوك -->
+    <div id="facebook" class="page">
+        <div class="card">
+            <span class="card-icon">📘</span>
+            <h2>صفحتنا على فيسبوك</h2>
+            <p>
+                تابع آخر الأخبار والتحديثات من <strong>Star Music</strong>. 
+                نشارك يومياً نصائح، إعلانات، وتفاعل مباشر مع متابعينا.
+            </p>
         </div>
-      </div>
 
-      <!-- ===== الفئة 10 ===== -->
-      <div class="category">
-        <h2>طعام ومطاعم <span class="badge">2 إعلانات</span></h2>
-        <div class="ads-grid">
-          <div class="ad-box tall">
-            <span class="ad-label">إعلان 19</span>
-            <script>
-              atOptions = {
-                'key' : '3628b50fe6f0c66853051d77d494c75a',
-                'format' : 'iframe',
-                'height' : 300,
-                'width' : 160,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/3628b50fe6f0c66853051d77d494c75a"></script>
-          </div>
-          <div class="ad-box">
-            <span class="ad-label">إعلان 20</span>
-            <script>
-              atOptions = {
-                'key' : '127716c4733e56a30af61d8a6802ec66',
-                'format' : 'iframe',
-                'height' : 250,
-                'width' : 300,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/127716c4733e56a30af61d8a6802ec66"></script>
-          </div>
+        <div class="card">
+            <h3>💬 ماذا ننشر؟</h3>
+            <ul class="features">
+                <li>تحديثات تطبيق حياتي</li>
+                <li>نصائح يومية لبناء العادات</li>
+                <li>عروض وإعلانات حصرية</li>
+                <li>تفاعل مباشر مع المتابعين</li>
+                <li>أخبار Star Music</li>
+            </ul>
         </div>
-      </div>
 
-      <!-- ===== الفئة 11 ===== -->
-      <div class="category">
-        <h2>ملابس وأزياء <span class="badge">2 إعلانات</span></h2>
-        <div class="ads-grid">
-          <div class="ad-box wide">
-            <span class="ad-label">إعلان 21</span>
-            <script>
-              atOptions = {
-                'key' : 'bd1db04c49277e33a23f4993f45c0a1c',
-                'format' : 'iframe',
-                'height' : 50,
-                'width' : 320,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/bd1db04c49277e33a23f4993f45c0a1c"></script>
-          </div>
-          <div class="ad-box wide">
-            <span class="ad-label">إعلان 22</span>
-            <script>
-              atOptions = {
-                'key' : 'f7a580f12b54d6c8a2b0a5d0f9e70d89',
-                'format' : 'iframe',
-                'height' : 90,
-                'width' : 728,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/f7a580f12b54d6c8a2b0a5d0f9e70d89"></script>
-          </div>
+        <div class="card">
+            <h3>أعجب بالصفحة</h3>
+            <p>كن جزءاً من مجتمع Star Music على فيسبوك</p>
+            <a href="https://facebook.com/اسم_صفحتك" target="_blank" class="btn btn-facebook">📘 زيارة الصفحة</a>
         </div>
-      </div>
+    </div>
 
-      <!-- ===== الفئة 12 ===== -->
-      <div class="category">
-        <h2>إلكترونيات <span class="badge">2 إعلانات</span></h2>
-        <div class="ads-grid">
-          <div class="ad-box wide">
-            <span class="ad-label">إعلان 23</span>
-            <script>
-              atOptions = {
-                'key' : 'e3c6b2c7fb3c80328af6310c770c92f2',
-                'format' : 'iframe',
-                'height' : 60,
-                'width' : 468,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/e3c6b2c7fb3c80328af6310c770c92f2"></script>
-          </div>
-          <div class="ad-box tall">
-            <span class="ad-label">إعلان 24</span>
-            <script>
-              atOptions = {
-                'key' : 'ed14d7d842e4639b2659c9fd1ff724b7',
-                'format' : 'iframe',
-                'height' : 600,
-                'width' : 160,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/ed14d7d842e4639b2659c9fd1ff724b7"></script>
-          </div>
-        </div>
-      </div>
+</div>
 
-      <!-- ===== الفئة 13 ===== -->
-      <div class="category">
-        <h2>وظائف وخدمات <span class="badge">2 إعلانات</span></h2>
-        <div class="ads-grid">
-          <div class="ad-box tall">
-            <span class="ad-label">إعلان 25</span>
-            <script>
-              atOptions = {
-                'key' : '3628b50fe6f0c66853051d77d494c75a',
-                'format' : 'iframe',
-                'height' : 300,
-                'width' : 160,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/3628b50fe6f0c66853051d77d494c75a"></script>
-          </div>
-          <div class="ad-box">
-            <span class="ad-label">إعلان 26</span>
-            <script>
-              atOptions = {
-                'key' : '127716c4733e56a30af61d8a6802ec66',
-                'format' : 'iframe',
-                'height' : 250,
-                'width' : 300,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/127716c4733e56a30af61d8a6802ec66"></script>
-          </div>
-        </div>
-      </div>
+<footer>
+    <p>© 2025 Star Music - جميع الحقوق محفوظة</p>
+    <p style="margin-top: 8px;">صُنع بـ ❤️ في سوريا</p>
+</footer>
 
-      <!-- ===== الفئة 14 ===== -->
-      <div class="category">
-        <h2>فن وثقافة <span class="badge">2 إعلانات</span></h2>
-        <div class="ads-grid">
-          <div class="ad-box wide">
-            <span class="ad-label">إعلان 27</span>
-            <script>
-              atOptions = {
-                'key' : 'bd1db04c49277e33a23f4993f45c0a1c',
-                'format' : 'iframe',
-                'height' : 50,
-                'width' : 320,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/bd1db04c49277e33a23f4993f45c0a1c"></script>
-          </div>
-          <div class="ad-box wide">
-            <span class="ad-label">إعلان 28</span>
-            <script>
-              atOptions = {
-                'key' : 'f7a580f12b54d6c8a2b0a5d0f9e70d89',
-                'format' : 'iframe',
-                'height' : 90,
-                'width' : 728,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/f7a580f12b54d6c8a2b0a5d0f9e70d89"></script>
-          </div>
-        </div>
-      </div>
+<!-- ============================================ -->
+<!-- 🖥️ إعلانات الكمبيوتر الجانبية (Native) -->
+<!-- ============================================ -->
+<div class="ad-desktop-only" style="position: fixed; left: 20px; top: 100px; width: 160px;">
+    <!-- 📢 9. Banner 160x600 (الكمبيوتر فقط) -->
+    <div class="ad-container">
+        <div class="ad-label">إعلان</div>
+        <script>
+          atOptions = {
+            'key' : 'ed14d7d842e4639b2659c9fd1ff724b7',
+            'format' : 'iframe',
+            'height' : 600,
+            'width' : 160,
+            'params' : {}
+          };
+        </script>
+        <script src="https://bauval.org/22/ed14d7d842e4639b2659c9fd1ff724b7"></script>
+    </div>
+</div>
 
-      <!-- ===== الفئة 15 ===== -->
-      <div class="category">
-        <h2>حيوانات وطيور <span class="badge">2 إعلانات</span></h2>
-        <div class="ads-grid">
-          <div class="ad-box wide">
-            <span class="ad-label">إعلان 29</span>
-            <script>
-              atOptions = {
-                'key' : 'e3c6b2c7fb3c80328af6310c770c92f2',
-                'format' : 'iframe',
-                'height' : 60,
-                'width' : 468,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/e3c6b2c7fb3c80328af6310c770c92f2"></script>
-          </div>
-          <div class="ad-box tall">
-            <span class="ad-label">إعلان 30</span>
-            <script>
-              atOptions = {
-                'key' : 'ed14d7d842e4639b2659c9fd1ff724b7',
-                'format' : 'iframe',
-                'height' : 600,
-                'width' : 160,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/ed14d7d842e4639b2659c9fd1ff724b7"></script>
-          </div>
-        </div>
-      </div>
+<div class="ad-desktop-only" style="position: fixed; right: 20px; top: 100px; width: 160px;">
+    <!-- 📢 10. Banner 160x300 (الكمبيوتر فقط) -->
+    <div class="ad-container">
+        <div class="ad-label">إعلان</div>
+        <script>
+          atOptions = {
+            'key' : '3628b50fe6f0c66853051d77d494c75a',
+            'format' : 'iframe',
+            'height' : 300,
+            'width' : 160,
+            'params' : {}
+          };
+        </script>
+        <script src="https://bauval.org/22/3628b50fe6f0c66853051d77d494c75a"></script>
+    </div>
+</div>
 
-      <!-- ===== الفئة 16 ===== -->
-      <div class="category">
-        <h2>ألعاب وترفيه <span class="badge">2 إعلانات</span></h2>
-        <div class="ads-grid">
-          <div class="ad-box tall">
-            <span class="ad-label">إعلان 31</span>
-            <script>
-              atOptions = {
-                'key' : '3628b50fe6f0c66853051d77d494c75a',
-                'format' : 'iframe',
-                'height' : 300,
-                'width' : 160,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/3628b50fe6f0c66853051d77d494c75a"></script>
-          </div>
-          <div class="ad-box">
-            <span class="ad-label">إعلان 32</span>
-            <script>
-              atOptions = {
-                'key' : '127716c4733e56a30af61d8a6802ec66',
-                'format' : 'iframe',
-                'height' : 250,
-                'width' : 300,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/127716c4733e56a30af61d8a6802ec66"></script>
-          </div>
-        </div>
-      </div>
-
-      <!-- ===== الفئة 17 ===== -->
-      <div class="category">
-        <h2>زراعة وبيئة <span class="badge">2 إعلانات</span></h2>
-        <div class="ads-grid">
-          <div class="ad-box wide">
-            <span class="ad-label">إعلان 33</span>
-            <script>
-              atOptions = {
-                'key' : 'bd1db04c49277e33a23f4993f45c0a1c',
-                'format' : 'iframe',
-                'height' : 50,
-                'width' : 320,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/bd1db04c49277e33a23f4993f45c0a1c"></script>
-          </div>
-          <div class="ad-box wide">
-            <span class="ad-label">إعلان 34</span>
-            <script>
-              atOptions = {
-                'key' : 'f7a580f12b54d6c8a2b0a5d0f9e70d89',
-                'format' : 'iframe',
-                'height' : 90,
-                'width' : 728,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/f7a580f12b54d6c8a2b0a5d0f9e70d89"></script>
-          </div>
-        </div>
-      </div>
-
-      <!-- ===== الفئة 18 ===== -->
-      <div class="category">
-        <h2>جمال وعناية <span class="badge">2 إعلانات</span></h2>
-        <div class="ads-grid">
-          <div class="ad-box wide">
-            <span class="ad-label">إعلان 35</span>
-            <script>
-              atOptions = {
-                'key' : 'e3c6b2c7fb3c80328af6310c770c92f2',
-                'format' : 'iframe',
-                'height' : 60,
-                'width' : 468,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/e3c6b2c7fb3c80328af6310c770c92f2"></script>
-          </div>
-          <div class="ad-box tall">
-            <span class="ad-label">إعلان 36</span>
-            <script>
-              atOptions = {
-                'key' : 'ed14d7d842e4639b2659c9fd1ff724b7',
-                'format' : 'iframe',
-                'height' : 600,
-                'width' : 160,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/ed14d7d842e4639b2659c9fd1ff724b7"></script>
-          </div>
-        </div>
-      </div>
-
-      <!-- ===== الفئة 19 ===== -->
-      <div class="category">
-        <h2>كتب وقراءة <span class="badge">2 إعلانات</span></h2>
-        <div class="ads-grid">
-          <div class="ad-box tall">
-            <span class="ad-label">إعلان 37</span>
-            <script>
-              atOptions = {
-                'key' : '3628b50fe6f0c66853051d77d494c75a',
-                'format' : 'iframe',
-                'height' : 300,
-                'width' : 160,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/3628b50fe6f0c66853051d77d494c75a"></script>
-          </div>
-          <div class="ad-box">
-            <span class="ad-label">إعلان 38</span>
-            <script>
-              atOptions = {
-                'key' : '127716c4733e56a30af61d8a6802ec66',
-                'format' : 'iframe',
-                'height' : 250,
-                'width' : 300,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/127716c4733e56a30af61d8a6802ec66"></script>
-          </div>
-        </div>
-      </div>
-
-      <!-- ===== الفئة 20 ===== -->
-      <div class="category">
-        <h2>مجتمع وخدمات عامة <span class="badge">2 إعلانات</span></h2>
-        <div class="ads-grid">
-          <div class="ad-box wide">
-            <span class="ad-label">إعلان 39</span>
-            <script>
-              atOptions = {
-                'key' : 'bd1db04c49277e33a23f4993f45c0a1c',
-                'format' : 'iframe',
-                'height' : 50,
-                'width' : 320,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/bd1db04c49277e33a23f4993f45c0a1c"></script>
-          </div>
-          <div class="ad-box wide">
-            <span class="ad-label">إعلان 40</span>
-            <script>
-              atOptions = {
-                'key' : 'f7a580f12b54d6c8a2b0a5d0f9e70d89',
-                'format' : 'iframe',
-                'height' : 90,
-                'width' : 728,
-                'params' : {}
-              };
-            </script>
-            <script src="https://bauval.org/22/f7a580f12b54d6c8a2b0a5d0f9e70d89"></script>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- نهاية categories-grid -->
-
-    <!-- ===== التذييل ===== -->
-    <footer>
-      <p>© 2025 <strong>شركة النور</strong> — جميع الحقوق محفوظة | بوابة الإعلانات المجتمعية</p>
-      <p style="margin-top:8px; font-size:0.8rem; opacity:0.7;">يتم عرض 50 وحدة إعلانية في 20 فئة عند فتح الصفحة</p>
-    </footer>
-
-  </div><!-- نهاية container -->
+<script>
+function showPage(pageId, btn) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(pageId).classList.add('active');
+    btn.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+    const titles = {
+        'home': 'Star Music | شركة الإبداع الرقمي',
+        'app': 'تطبيق حياتي | تتبع العادات اليومية - Star Music',
+        'youtube': 'قناة يوتيوب | Star Music',
+        'facebook': 'صفحة فيسبوك | Star Music'
+    };
+    document.title = titles[pageId] || 'Star Music';
+}
+</script>
 
 </body>
 </html>
