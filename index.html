@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- 📊 Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-970KB1BD3V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-970KB1BD3V');
+</script>
+
 <!-- ⭐ SEO -->
 <title>IQ Technology Production | شركة الإبداع الرقمي والتقنية</title>
 <meta name="description" content="IQ Technology Production شركة عربية رائدة في الإبداع الرقمي والتقنية. نقدم تطبيق حياتي لتتبع العادات والخطط الدراسية، تطبيق الشيف للوصفات، ستوديو IQ Music للإنتاج الموسيقي، وقناة Star Music. قريباً IQMOBIL لمقارنة الأجهزة الإلكترونية في الوطن العربي.">
@@ -1281,6 +1290,14 @@ function showPage(pageId, btn) {
     
     if (history.pushState) {
         history.pushState(null, '', '#' + pageId);
+    }
+    
+    if (typeof gtag === 'function') {
+        gtag('event', 'page_view', {
+            page_title: document.title,
+            page_location: window.location.href,
+            page_path: '/' + pageId
+        });
     }
 }
 
