@@ -15,18 +15,21 @@
 <meta name="geo.region" content="SY">
 <meta name="geo.placename" content="Syria">
 
+<!-- 📱 Open Graph -->
 <meta property="og:title" content="IQ Technology Production | شركة الإبداع الرقمي">
 <meta property="og:description" content="منظومة متكاملة من التطبيقات والمواقع والاستوديوهات العربية">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://starmusic1167.github.io/starmusic/">
+<meta property="og:url" content="https://igmobil.github.io/IQ-technology/">
 <meta property="og:locale" content="ar_AR">
 <meta property="og:site_name" content="IQ Technology Production">
 
+<!-- 🐦 Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="IQ Technology Production | شركة الإبداع الرقمي">
 <meta name="twitter:description" content="منظومة متكاملة من التطبيقات والمواقع والاستوديوهات">
 
-<link rel="canonical" href="https://starmusic1167.github.io/starmusic/">
+<!-- 🔗 Canonical -->
+<link rel="canonical" href="https://igmobil.github.io/IQ-technology/">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +41,7 @@
   "@type": "Organization",
   "name": "IQ Technology Production",
   "alternateName": "آي كيو تكنولوجي برودكشن",
-  "url": "https://starmusic1167.github.io/starmusic/",
+  "url": "https://igmobil.github.io/IQ-technology/",
   "email": "important1167@gmail.com",
   "description": "شركة الإبداع الرقمي وتطوير التطبيقات الذكية",
   "founder": [
@@ -49,6 +52,18 @@
     "https://youtube.com/@starmusic_ak1",
     "https://www.facebook.com/share/1Bi9axjgct/"
   ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "تطبيق حياتي",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "Android",
+  "description": "تطبيق لتتبع العادات اليومية وبناء حياة أفضل",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
 }
 </script>
 
@@ -78,7 +93,6 @@
         -moz-osx-font-smoothing: grayscale;
     }
     
-    /* 🎯 الشريط العلوي */
     header {
         background: rgba(255, 255, 255, 0.92);
         backdrop-filter: blur(24px);
@@ -147,7 +161,6 @@
         font-weight: 500;
     }
     
-    /* 📂 القائمة الجانبية */
     .sidebar-overlay {
         position: fixed;
         top: 0; left: 0;
@@ -160,10 +173,7 @@
         z-index: 1100;
     }
     
-    .sidebar-overlay.active {
-        opacity: 1;
-        visibility: visible;
-    }
+    .sidebar-overlay.active { opacity: 1; visibility: visible; }
     
     .sidebar {
         position: fixed;
@@ -224,11 +234,7 @@
         padding-bottom: 3px;
     }
     
-    .close-btn:hover {
-        background: rgba(239, 68, 68, 0.1);
-        color: #dc2626;
-    }
-    
+    .close-btn:hover { background: rgba(239, 68, 68, 0.1); color: #dc2626; }
     .close-btn:active { transform: scale(0.9); }
     
     .sidebar-menu {
@@ -279,7 +285,6 @@
         border-top: 1px solid rgba(0, 102, 255, 0.08);
     }
     
-    /* 📄 المحتوى */
     .content {
         max-width: 720px;
         margin: 0 auto;
@@ -297,7 +302,6 @@
         to { opacity: 1; transform: translateY(0); }
     }
     
-    /* 🎴 البطاقات */
     .card {
         background: #ffffff;
         border: 1px solid rgba(0, 102, 255, 0.06);
@@ -352,7 +356,6 @@
     
     strong { color: #0f172a; font-weight: 700; }
     
-    /* 🎯 Hero */
     .hero {
         background: linear-gradient(135deg, #0066ff, #7c3aed);
         color: white;
@@ -447,7 +450,6 @@
     
     .hero .btn-outline:active { transform: scale(0.96); }
     
-    /* 📦 شبكة المشاريع */
     .projects-grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -502,7 +504,6 @@
         margin-bottom: 8px;
     }
     
-    /* 📋 المميزات */
     .features {
         text-align: right;
         margin: 18px 0 4px;
@@ -520,7 +521,6 @@
     
     .features li:last-child { border-bottom: none; }
     
-    /* 🔘 الأزرار */
     .btn {
         display: inline-block;
         background: #0066ff;
@@ -557,7 +557,6 @@
     .btn-email { background: #0f172a; }
     .btn-email:hover { background: #1e293b; }
     
-    /* 🔗 السوشيال */
     .social-links {
         display: flex;
         justify-content: center;
@@ -581,7 +580,6 @@
     .social-links a:hover { transform: translateY(-2px); }
     .social-links a:active { transform: scale(0.95); opacity: 0.9; }
     
-    /* 📞 التواصل */
     .contact-info {
         display: flex;
         flex-direction: column;
@@ -610,9 +608,7 @@
         transform: translateX(-3px);
     }
     
-    .contact-item:active {
-        transform: scale(0.98);
-    }
+    .contact-item:active { transform: scale(0.98); }
     
     .contact-label {
         font-size: 14px;
@@ -627,7 +623,6 @@
         text-align: left;
     }
     
-    /* 📢 الإعلانات */
     .ad-container {
         background: #ffffff;
         border: 1px dashed rgba(0, 102, 255, 0.15);
@@ -664,7 +659,6 @@
         .hero .hero-iq { font-size: 50px; }
     }
     
-    /* 🦶 الفوتر */
     footer {
         text-align: center;
         padding: 28px 20px 24px;
@@ -724,7 +718,6 @@
 <!-- 🚀 Adsterra Social Bar -->
 <script data-cfasync="false" src="https://abscloud.org/1/75bdea125a46e89eb786e5ec590f0bc6"></script>
 
-<!-- 🎯 الشريط العلوي -->
 <header>
     <button class="menu-btn" onclick="toggleSidebar()" aria-label="القائمة">☰</button>
     
@@ -736,7 +729,6 @@
     </div>
 </header>
 
-<!-- 📂 القائمة الجانبية -->
 <div class="sidebar-overlay" id="overlay" onclick="toggleSidebar()"></div>
 
 <aside class="sidebar" id="sidebar">
@@ -758,7 +750,6 @@
 
 <div class="content">
 
-    <!-- Banner 320x50 (جوال) -->
     <div class="ad-container ad-mobile-only">
         <div class="ad-label">إعلان</div>
         <script>
@@ -773,7 +764,6 @@
         <script src="https://bauval.org/22/bd1db04c49277e33a23f4993f45c0a1c"></script>
     </div>
 
-    <!-- Banner 728x90 (كمبيوتر) -->
     <div class="ad-container ad-desktop-only">
         <div class="ad-label">إعلان</div>
         <script>
@@ -1003,7 +993,7 @@
         <div class="card card-right">
             <h3>مجالات عملنا</h3>
             <ul class="features">
-                <li>خدمات وانتاج موسيقي</li>
+                <li>عزف المجوز الاحترافي</li>
                 <li>توزيع موسيقي كامل</li>
                 <li>تسجيل صوتي بجودة عالية</li>
                 <li>إنتاج موسيقى للأعمال التجارية</li>
@@ -1132,7 +1122,6 @@
 
 </div>
 
-<!-- 🦶 الفوتر -->
 <footer>
     <div class="footer-line">
         <span class="footer-brand">© 2025 <span class="footer-iq">IQ</span> Technology Production</span>
@@ -1151,7 +1140,6 @@
     </div>
 </footer>
 
-<!-- Banner 160x600 (كمبيوتر - يسار) -->
 <div class="ad-desktop-only" style="position: fixed; left: 20px; top: 100px; width: 160px;">
     <div class="ad-container">
         <div class="ad-label">إعلان</div>
@@ -1168,7 +1156,6 @@
     </div>
 </div>
 
-<!-- Banner 160x300 (كمبيوتر - يمين) -->
 <div class="ad-desktop-only" style="position: fixed; right: 20px; top: 100px; width: 160px;">
     <div class="ad-container">
         <div class="ad-label">إعلان</div>
@@ -1207,37 +1194,31 @@ function showPage(pageId, btn) {
     const targetPage = document.getElementById(pageId);
     if (!targetPage) return;
     
-    // إذا كانت الصفحة الحالية نشطة، لا تفعل شيء
     if (targetPage.classList.contains('active')) {
         if (btn) {
             document.querySelectorAll('.sidebar-menu button').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
         }
-        toggleSidebar();
+        if (document.getElementById('sidebar').classList.contains('active')) {
+            toggleSidebar();
+        }
         return;
     }
     
-    // إخفاء كل الصفحات
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    // إزالة active من كل الأزرار
     document.querySelectorAll('.sidebar-menu button').forEach(b => b.classList.remove('active'));
     
-    // تفعيل الصفحة الجديدة
     targetPage.classList.add('active');
     
-    // تحديد الزر النشط
     const activeBtn = btn || document.querySelector(`.sidebar-menu button[data-page="${pageId}"]`);
     if (activeBtn) activeBtn.classList.add('active');
     
-    // إغلاق القائمة إذا كانت مفتوحة
     if (document.getElementById('sidebar').classList.contains('active')) {
         toggleSidebar();
     }
     
-    // التمرير للأعلى بسلاسة
     window.scrollTo({ top: 0, behavior: 'smooth' });
     
-    // تحديث العنوان
     const titles = {
         'home': 'IQ Technology Production | شركة الإبداع الرقمي',
         'apps': 'تطبيقاتنا | IQ Technology Production',
@@ -1249,13 +1230,11 @@ function showPage(pageId, btn) {
     };
     document.title = titles[pageId] || 'IQ Technology Production';
     
-    // تحديث الرابط في المتصفح
     if (history.pushState) {
         history.pushState(null, '', '#' + pageId);
     }
 }
 
-// إغلاق القائمة بزر Escape
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
         const sidebar = document.getElementById('sidebar');
@@ -1263,7 +1242,6 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
-// دعم الروابط المباشرة (مثل #apps)
 window.addEventListener('load', function() {
     const hash = window.location.hash.replace('#', '');
     if (hash && document.getElementById(hash)) {
